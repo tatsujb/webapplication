@@ -1,0 +1,21 @@
+@import '../assets/FontAwesome/scss/fontawesome';
+@import '../assets/FontAwesome/scss/solid';
+@import '../assets/FontAwesome/scss/brands';
+
+.user {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.twitter {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
